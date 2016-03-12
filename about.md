@@ -4,14 +4,15 @@ title: About
 permalink: /about/
 ---
 
-<img src="{{ site.baseurl }}/assets/profile-placeholder.gif" title="Profile Picture" class="profile">
+<img src="/assets/headshot.jpg" title="Profile Picture" class="profile">
 
-Centrarium is a custom theme for Jekyll, made by [Ben Centra][bencentra] for his own blog. He'd be humbled if you liked it enough to use it as well! Installation and configuration instructions can be found in the [GitHub repository](https://github.com/bencentra/centrarium).
+## Hi!
+Hello and thank you for checking out my blog! My name is Ken, I am 23, and from Long Island, New York. I'm currently living in NYC and attending Metis, a bootcamp in Manhattan. Metis is an intensive project-oriented curriculum.  Each project poses a question and I am responsible for gathering the necessary data and choosing the best methods of analysis to extract a solution.
 
-This page is a good place to write about yourself, your project, your product, or whatever it is your site is for. You can replace the image above, or you can get rid of it entirely. 
+## Background
+Prior to Metis I was a Chemist working at Calmetrics, Inc. I created and certified X-ray fluorescence (XRF) standards used in the calibration of XRF machines. Before that I was a student at Stony Brook University Where I received a BS in Chemistry and Applied Mathematics and Statistics.
 
-You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/). And you can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+## Data
+Whether I'm in a forest or analyzing data, I love exploring and learning about the world around me. This blog will be primarily focused on the data. Periodically I will make posts about the data science projects I'm working on, tutorials of something I don't find explained well enough, and occasionally just write about libraries I'm using. If I'm ever wrong about something or you want me to write about something, shoot me a message or write something in the comments.
 
-[centrarium]: https://github.com/bencentra/centrarium
-[bencentra]: http://bencentra.com
-[jekyll]: https://github.com/jekyll/jekyll
+I hope you enjoy my blog!
