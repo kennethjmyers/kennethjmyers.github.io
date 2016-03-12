@@ -41,7 +41,7 @@ I spent this entire past weekend trying to get my latest project onto Heroku. I 
     - **Procfile** : name this file exactly like this, WITHOUT any '.txt' extension. Inside you should have:
   
 
-        web: python flask_app.py
+                web: python flask_app.py
 
     
     You should replace flask_app.py with the name of your flask app. Note that I dont have gunicorn because I don't use that as the webserver and am not familiar with it.
