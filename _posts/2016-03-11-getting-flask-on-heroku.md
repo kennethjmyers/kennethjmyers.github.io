@@ -48,15 +48,12 @@ I spent this entire past weekend trying to get my latest project onto Heroku. I 
    
     - **requirements.txt** : This file and the following two HAVE the '.txt' extension. In this file you will list the packages that pip should install for you. Most tutorials recommend that you should do ```$ pip freeze > requirements.txt``` but I think you should only do this if you are working on a virtual environment that only has the necessary packages installed. Otherwise that command will add every package you have installed which will rapidly take up your apps size. For mine I only added the packages that I knew were necessary and pip took care of their dependencies. Here's an example:
   
-        <code>
-        Flask==0.10.1
         
-        Jinja2==2.8
-        
-        matplotlib==1.5.1
-        
-        mpld3==0.2
-        </code>
+                Flask==0.10.1
+                Jinja2==2.8
+                matplotlib==1.5.1
+                mpld3==0.2
+       
     
     - **runtime.txt** : This file is necessary if you use a python installation that is NOT 2.7.X (3.5.1 for example). Inside you would write:
     
