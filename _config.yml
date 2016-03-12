@@ -49,8 +49,12 @@ descriptions:
   - cat: Data Science
     desc: "Posts describing my work in data science."
 
+  - cat: Libraries
+    desc: "What's in the toolbelt?"
+
   - cat: Tutorials
     desc: "How to do the things."
+
 
 # Social icons and sharing options
 #
@@ -77,7 +81,7 @@ social:
 
   - name: Facebook
     icon: facebook
-    username: 
+    username:
     url:
     desc: Friend me on Facebook
     share: true

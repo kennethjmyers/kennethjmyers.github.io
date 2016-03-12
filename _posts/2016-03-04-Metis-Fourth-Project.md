@@ -16,26 +16,26 @@ featured: true
 I decided to do something a bit more fun for my fourth project at Metis. I've always been a huge fan of anime. It started when I was five with Pokémon and Sailor Moon. By the time I was nine I was setting an alarm so I could wake up at 1AM to watch Yu Yu Hakusho, Cowboy Bebop, Trigun and Lupin III. So when it came to deciding what I should apply NLP techniques to I decided to make something that would help me to discover anime I hadn't watched before.
 
 <div align="center">
-    <img src="https://github.com/kennmyers/kennmyers.github.io/blob/master/images/umaru.gif?raw=true">
+    <img src="/assets/metis_fourth_project/umaru.gif">
     <p>Me watching anime.</p>
 </div>
 
-I created an <a href="https://anime-recommender.herokuapp.com/">**Anime Recommender**</a> (also shown at the bottom of this page). I scraped anime from <a href="http://myanimelist.net/">MyAnimeList</a> (MAL) using their <a href="http://myanimelist.net/modules.php?go=api">API</a>. Firstly, if you are interested in anime more than the techniques I used I must tell you that it does not dynamically pull anime info from MAL, nor does the internal models have data on anime created after ~2014 (I was on a time crunch and to save time on writing a scraper for MAL's full list of anime, I used a previously scraped list found on <a href="https://www.reddit.com/r/anime/comments/2meyo4/myanimelist_data_analysis/">Reddit</a>). 
+I created an <a href="https://anime-recommender.herokuapp.com/">**Anime Recommender**</a> (also shown at the bottom of this page). I scraped anime from <a href="http://myanimelist.net/">MyAnimeList</a> (MAL) using their <a href="http://myanimelist.net/modules.php?go=api">API</a>. Firstly, if you are interested in anime more than the techniques I used I must tell you that it does not dynamically pull anime info from MAL, nor does the internal models have data on anime created after ~2014 (I was on a time crunch and to save time on writing a scraper for MAL's full list of anime, I used a previously scraped list found on <a href="https://www.reddit.com/r/anime/comments/2meyo4/myanimelist_data_analysis/">Reddit</a>).
 
 <div align="center">
-    <img src="https://github.com/kennmyers/kennmyers.github.io/blob/master/images/edatcomputer.gif?raw=true">
+    <img src="/assets/metis_fourth_project/edatcomputer.gif">
     <p>Me going to work.</p>
 </div>
 
-After scraping the information from MAL, I cleaned it up using NLTK. I tokenized the anime descriptions, lemmatized each word, removed stop words and applied a tf-idf vectorizer to this data. The vectorizer used a max document frequency of 0.2 and a min document frequency of 0.01 and n-grams of size 1-3. With just under 9000 anime this meant that words had to appear in between 90 and 360 of the anime. This may seem low but with <a href="http://myanimelist.net/anime.php">all the diversity</a> in anime it seemed like a good range to choose from. Then I clustered the data by K-means. I came to find many stop words specific just to anime, such as 'special', 'edition', 'aired', 'based', and 'manga'. I removed nearly 100 of these and cut out descriptions that were less than 25 words (due to many synopses only describing when they aired or what they were adapted from). This cut my anime down to about two-thirds of what it previoiusly was. 
+After scraping the information from MAL, I cleaned it up using NLTK. I tokenized the anime descriptions, lemmatized each word, removed stop words and applied a tf-idf vectorizer to this data. The vectorizer used a max document frequency of 0.2 and a min document frequency of 0.01 and n-grams of size 1-3. With just under 9000 anime this meant that words had to appear in between 90 and 360 of the anime. This may seem low but with <a href="http://myanimelist.net/anime.php">all the diversity</a> in anime it seemed like a good range to choose from. Then I clustered the data by K-means. I came to find many stop words specific just to anime, such as 'special', 'edition', 'aired', 'based', and 'manga'. I removed nearly 100 of these and cut out descriptions that were less than 25 words (due to many synopses only describing when they aired or what they were adapted from). This cut my anime down to about two-thirds of what it previoiusly was.
 
 I examined the total inertias of different cluster sizes (shown below) and was unable to find a definitive cluster to use for analysis. I arbitrarily chose a cluster size of 9 after failing to apply gap statistics to the data.
 
 <div align="center">
-    <img src="https://github.com/kennmyers/kennmyers.github.io/blob/master/images/inertias.png?raw=true">
+    <img src="/assets/metis_fourth_project/inertias.png">
 </div>
 
-The top words in each of the 9 clusters are as follows: 
+The top words in each of the 9 clusters are as follows:
 
     0. earth, space, planet, alien, pilot
     1. father, family, mother, live, life
@@ -52,7 +52,7 @@ I then began programming the app to allow people to find the most similar anime 
 After this a programmed a tabular output of the results so that the user can see stats on the anime selected, the full synopsis, and also be linked back to the anime's page on MAL.
 
 <div align="center">
-    <img src="https://github.com/kennmyers/kennmyers.github.io/blob/master/images/girlasleepatcomputer.gif?raw=true">
+    <img src="/assets/metis_fourth_project/girlasleepatcomputer.gif">
     <p>After a hard days work.</p>
 </div>
 
