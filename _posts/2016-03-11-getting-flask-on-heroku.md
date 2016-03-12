@@ -29,15 +29,15 @@ I spent this entire past weekend trying to get my latest project onto Heroku. I 
 
 7. Make sure that in your ```flask_app.py``` file (the one that executes the app) this is at the bottom instead of whatever you might have used earlier:
 
-```python
-if __name__ == '__main__':
-    app.debug = True
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host='0.0.0.0', port=port)
-```
+  ```python
+  if __name__ == '__main__':
+      app.debug = True
+      port = int(os.environ.get("PORT", 5000))
+      app.run(host='0.0.0.0', port=port)
+  ```
 
 8. Next you will add some crucial files to your repo:
-
+    
     - **Procfile** : name this file exactly like this, WITHOUT any '.txt' extension. Inside you should have:
   
 ```
