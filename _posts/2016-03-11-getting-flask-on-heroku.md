@@ -58,17 +58,17 @@ I spent this entire past weekend trying to get my latest project onto Heroku. I 
     - **runtime.txt** : This file is necessary if you use a python installation that is NOT 2.7.X (3.5.1 for example). Inside you would write:
     
     
-        python-3.5.1
+                python-3.5.1
     
     
     - **conda-requirements.txt** : In this file you list packages that require non-python dependencies (for excample C/C++). If later you find that you are going over your build size when you try pushing, look to see if Heroku is trying to build ```MKL``` . MKL is an Intel package that speeds up numpy/scipy computations. However, the file size is relatively huge and it is not completely necessary to run an app. If you need, add ```nomkl``` to this file. Here's an example:
     
         
-        nomkl
-        numpy
-        pandas
-        scipy
-        scikit-learn
+                nomkl
+                numpy
+                pandas
+                scipy
+                scikit-learn
 
     
 9. Now you've got all the necessary files. However, there are still a few things you have to do before you're app will build. You have to add the build packs:
@@ -76,7 +76,7 @@ I spent this entire past weekend trying to get my latest project onto Heroku. I 
     - [The Python Buildpack](https://github.com/heroku/heroku-buildpack-python) : This will set the current buildpack to python and ensure that the it builds properly.
 
 
-        $ heroku buildpacks:set heroku/python
+                $ heroku buildpacks:set heroku/python
 
         
     - The Conda Buildpack [2.7.X](https://github.com/kennethreitz/conda-buildpack) \| [3.5.X](https://github.com/buildingspeak/conda-buildpack) : I use python 3.5 and I used the 3.5.X buildpack linked above and it worked for me. A friend who uses 2.7.X used its respective pack and it worked for him.
@@ -96,7 +96,7 @@ I spent this entire past weekend trying to get my latest project onto Heroku. I 
     - Also, I do not recall if this is necessary but both and me and my friend added this to the apps config variables and it didn't break anything (as far as we can tell) :
     
         
-        $ heroku config:add LD_LIBRARY_PATH=/app/.heroku/vendor/lib/atlas-base/atlas:/app/.heroku/vendor/lib/atlas-base:/app/.heroku/vendor/lib/
+                $ heroku config:add LD_LIBRARY_PATH=/app/.heroku/vendor/lib/atlas-base/atlas:/app/.heroku/vendor/lib/atlas-base:/app/.heroku/vendor/lib/
         
         
     If anything it seems to be adding the path to Atlas, the alternative to MKL that I removed earlier in the 'conda-requirements.txt' step.
