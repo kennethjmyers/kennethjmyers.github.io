@@ -39,7 +39,7 @@ jekyll-archives:
     tag: '/tag/:name/'
 
 # Disqus comments
-disqus_shortname: kennjamesmyers
+disqus_shortname: kennmyers
 
 # Google analytics
 ga_tracking_id: "UA-60999709-2"
