@@ -95,9 +95,10 @@ I spent this entire past weekend trying to get my latest project onto Heroku. I 
         
     - Also, I do not recall if this is necessary but both and me and my friend added this to the apps config variables and it didn't break anything (as far as we can tell) :
     
-        ```
-        $ heroku config:add LD_LIBRARY_PATH=/app/.heroku/vendor/lib/atlas-base/atlas:/app/.heroku/vendor/lib/atlas-base:/app/.heroku/vendor/lib/
-        ```
+        
+        $ heroku config:add LD_LIBRARY_PATH=/app/.heroku/vendor/lib/atlas-base/atlas:\
+        /app/.heroku/vendor/lib/atlas-base:/app/.heroku/vendor/lib/
+        
         
     If anything it seems to be adding the path to Atlas, the alternative to MKL that I removed earlier in the 'conda-requirements.txt' step.
     
