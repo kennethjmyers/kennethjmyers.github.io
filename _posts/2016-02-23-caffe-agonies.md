@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Caffe Agonies"
+author: Kenneth Myers
 description: Setting up Caffe for a Python kernel in Jupyter.
 headline:
 modified: 2016-02-23

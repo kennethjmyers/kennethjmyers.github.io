@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Metis-Second Project"
+title: "Predicting Ratings of Movies-Based-on-Books by their Books"
+author: Kenneth Myers
 description: Outline of my second Metis Project
 headline:
 modified: 2016-01-30

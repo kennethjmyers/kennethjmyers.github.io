@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Metis-Fourth Project: Recommending Anime Through Natural Language Processing of Descriptions"
+title: "Recommending Anime Through Natural Language Processing of Descriptions"
+author: Kenneth Myers
 description: Outline of my Fourth Metis Project
 headline:
 modified: 2016-03-04

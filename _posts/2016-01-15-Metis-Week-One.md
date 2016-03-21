@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Metis-Week One"
+title: "Metis: First Impressions"
+author: Kenneth Myers
 description:
 headline:
 modified: 2016-01-15
@@ -21,4 +22,4 @@ I have discovered that my fears could not have been further from the truth. I've
 
 This attention has become somewhat of a double-edged sword when it comes to group work. While I am able to focus on my code and get the work done, most often in advance of a deadline, I have become distant from my group partners and it is something that I will have to work on in the coming weeks. I think I'll try to help them with their work as I don't see slowing my pace as an alternative.
 
-My own shortcomings aside, Metis has broadened my horizons faster than I had hoped. I feel that if I had tried to study on my own then I would not have made nearly as much progress in just a single week. With still so much room to grow I plan to tackle each week as if it was my first. 
+My own shortcomings aside, Metis has broadened my horizons faster than I had hoped. I feel that if I had tried to study on my own then I would not have made nearly as much progress in just a single week. With still so much room to grow I plan to tackle each week as if it was my first.
