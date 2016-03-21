@@ -25,11 +25,19 @@ I don't really need 50 signatures and like many people my age, I already pay for
 Instead I made my own signature in a similar style and decided to [open source](https://github.com/kennmyers/Gmail_signature) my code for other people on a budget.
 
 The way it works is simple:
+
 * Fork the repo
-* Edit the HTML replacing the links to your headshot and social media. Change the icons as you like as well as your name and job information.
+
+* Edit the HTML replacing the links to your headshot and social media. Change the icons as you like as well as your name 
+
+* and job information.
+
 * Open the HTML file locally in a browser.
+
 * Copy the HTML.
+
 * Paste it into the signature box in your Gmail settings.
+
 * Save your settings.
 
 Gmail may not be able to copy some of the text formatting so try sending yourself a test email and see what happens. If the color, font-weight or style is wrong then simply go back into the email signature and change it with the built-in font tools.
