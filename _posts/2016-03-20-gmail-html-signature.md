@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Getting an HTML Gmail Signature"
+author: Kenneth Myers
 description:
 headline:
 modified: 2016-03-20
