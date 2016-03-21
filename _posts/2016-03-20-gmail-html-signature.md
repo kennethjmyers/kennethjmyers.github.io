@@ -28,9 +28,7 @@ The way it works is simple:
 
 * Fork the repo
 
-* Edit the HTML replacing the links to your headshot and social media. Change the icons as you like as well as your name 
-
-* and job information.
+* Edit the HTML replacing the links to your headshot and social media. Change the icons as you like as well as your name and job information.
 
 * Open the HTML file locally in a browser.
 
