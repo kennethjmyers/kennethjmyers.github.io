@@ -69,7 +69,7 @@ Now I knew what cells were in which cages and what operations were in which cell
 <h3>Web App</h3>
 The only thing left to do was creating the web application. This may have been the most frustrating thing as I am not much of a web developer. The final product incorporates various javascript and jquery as well as the libraries Bootstrap, Dropzone, and Cropper. I had many difficulties getting the final image to dynamically update in the output box but eventually succeeded. It's not perfect but it will do for now. The first thing I would need to change in the future is to not hard save the inputed image. Right now I think the app may only be usable by one person at a time because the puzzle gets saved to 'puzzle.jpg' each time so multiple people using it may get different results (or I just don't understand how web serving works which is entirely possible).
 
-The web app can be found below or at [this link](). Some limitations to keep in mind is that it only works on 4x4 puzzles. I would have liked to make it for any sized puzzle but due to time crunches I could only make an MVP. Also, I have not tested this on camera images but I expect it could work depending on the lighting and if the angle is perpendicular (there is no polygon correction in my code).
+The web app can be found below or at [this link](http://kenkensolver.herokuapp.com/). Some limitations to keep in mind is that it only works on 4x4 puzzles. I would have liked to make it for any sized puzzle but due to time crunches I could only make an MVP. Also, I have not tested this on camera images but I expect it could work depending on the lighting and if the angle is perpendicular (there is no polygon correction in my code).
 
 Overall I think it was a good project. It may seem simple but a lot of work did go into it. Thanks for reading this and checking out the project!
 
@@ -77,10 +77,10 @@ Overall I think it was a good project. It may seem simple but a lot of work did 
 
 
 <iframe
- src="https://anime-recommender.herokuapp.com/"
+ src="https://kenkensolver.herokuapp.com/"
  width="100%" height="800">
   <p>
-    <a href="https://anime-recommender.herokuapp.com">
+    <a href="https://kenkensolver.herokuapp.com/">
       Fallback link for browsers that, unlikely, don't support frames
     </a>
   </p>
