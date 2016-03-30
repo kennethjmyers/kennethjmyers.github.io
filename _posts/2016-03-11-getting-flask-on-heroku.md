@@ -33,7 +33,24 @@ I spent this entire past weekend trying to get my latest project onto Heroku. I 
 
 5. If you do not already have git set up in the repository, initialize git with ```$ git init``` . Make sure the '.git' folder is located in the same directory as your Flask app.
 
-6. Type ```$ heroku create``` . This will create a repo for your app on your Heroku account and add a remote connection from your local repo to Heroku. To see this type ```$ git remote -v``` .
+6. <h4>Original</h4>
+    Type ```$ heroku create``` . This will create a repo for your app on your Heroku account and add a remote connection from your local repo to Heroku. To see this type ```$ git remote -v```.
+
+    <h4>Edit 3/30/16</h4>
+    After using this walkthrough on my second app, I came to find that Step 9 may have been wrong and if you need the conda-buildpack (numpy, scipy, etc.) then you may need to do the following in place of ```heroku create```:
+
+    The Conda Buildpack [2.7.X](https://github.com/kennethreitz/conda-buildpack) \| [3.5.X](https://github.com/buildingspeak/conda-buildpack)
+
+    __3.5.X__
+
+
+        $ heroku create --buildpack https://github.com/buildingspeak/conda-buildpack.git
+
+
+    __2.7.X__
+
+
+        $ heroku create --buildpack https://github.com/kennethreitz/conda-buildpack.git
 
 7. Make sure that in your ```flask_app.py``` file (the one that executes the app) this is at the bottom instead of whatever you might have used earlier:
 
@@ -79,7 +96,11 @@ I spent this entire past weekend trying to get my latest project onto Heroku. I 
                 scikit-learn
 
 
-9. Now you've got all the necessary files. However, there are still a few things you have to do before you're app will build. You have to add the build packs:
+9. <h4>Edit 3/30/16</h4>
+    After using this walkthrough on my second app, I am no longer sure if this step is necessary if you already created your app with the conda-buildpack in step 6. Doing this step won't hurt (I still did it) but it may not be needed.
+
+    <h4>Original</h4>
+    Now you've got all the necessary files. However, there are still a few things you have to do before you're app will build. You have to add the build packs:
 
     - [The Python Buildpack](https://github.com/heroku/heroku-buildpack-python) : This will set the current buildpack to python and ensure that the it builds properly.
 
