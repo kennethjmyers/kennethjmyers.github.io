@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Caffe Agonies"
+title: "My Experience Installing Caffe"
 author: Kenneth Myers
 description: Setting up Caffe for a Python kernel in Jupyter.
 headline:
