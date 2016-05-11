@@ -1,0 +1,117 @@
+body {
+  padding: 70px 0 0 0;
+  position: relative;
+}
+
+nav {
+  padding:10px 0;
+  
+}
+
+.navbar {
+  background-color: #666699;
+  
+}
+
+.navbar-default .navbar-brand {
+  color: #fff;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: #ddd;
+}
+
+/*nav bar links*/
+.navbar-default .navbar-nav li a {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav li a:hover {
+    color: #ddd;
+}
+
+.navbar-default .navbar-nav li a:focus {
+    color: #ddd;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  background-color:#666699;
+  color:#ccc;
+  
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #fff;
+  
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+#about-section, #portfolio-section, #contact-section {
+  margin: 0;
+  padding: 0 10% 40px;
+}
+
+#headshot {
+  border-radius: 50%;
+  max-width: 40%;
+  margin:0 auto;
+  
+}
+
+.about-text {
+  text-align:justify;
+}
+
+h3 {
+  text-align:left;
+}
+
+h4 {
+  line-height:1.5em;
+  min-height:3em;
+}
+
+.pfo-image {
+  border: solid 2px;
+  max-height:200px;
+  margin: 0 0 10px 0;
+}
+
+.thumbnail p {
+  height: 3em;
+  text-overflow: ellipsis;
+  text-align: center;
+  overflow: hidden;
+}
+
+.pfo-text {
+  text-align:left;
+}
+
+.contact{
+  font-size: 10em;
+}
+
+.fa {
+  color: #666699;
+}
+
+.contact-text{
+  font-size:.5em;
+  text-align:center;
+  height:2em;
+  line-height: 2em;
+  vertical-align: middle;
+  color: #666699;
+}
+
+a { 
+  color:black;
+}
+
+a:hover {
+   text-decoration:none;
+}
