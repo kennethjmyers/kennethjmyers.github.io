@@ -67,4 +67,4 @@ Fortunately this data also comes from MTA data. We used heatmaps to visualize th
 
 We found that the best subways to promote at were the ones with the most tech industry in the zip codes 10010 and 10003 during the evening times on weekdays. It may be also be good to promote earlier in the day though there isn't enough data to support that. Future studies should investigate the times people are most likely to stop and listen to a promotor. For example, are people less likely to listen to a promotor if they're on their way to work? The answer could be useful in improving our recommendation.
 
-To learn more about this project check it on [Github](https://github.com/jstnstwrt/nyc-subway-station-reccomender) or see our [presentation](https://docs.google.com/presentation/d/1s5yG2yhrOhlcQS8lzU-W7oRe2lRHf-Ne8bPxPbgQrL0/edit?usp=sharing).
+To learn more about this project check it out on [Github](https://github.com/jstnstwrt/nyc-subway-station-reccomender) or see our [presentation](https://docs.google.com/presentation/d/1s5yG2yhrOhlcQS8lzU-W7oRe2lRHf-Ne8bPxPbgQrL0/edit?usp=sharing).
