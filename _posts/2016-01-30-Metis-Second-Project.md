@@ -57,7 +57,10 @@ So once again I found that book ratings do not seem to have a strong effect on t
 As an extra analysis I also examined the extreme cases where books were better than the movies and movies better than the books. Using IMDB ratings, I found completely different lists than FiveThirtyEight.
 
 In the figures below, the top figure shows extreme cases where movies were rated better than their books, and the bottom figure shows extreme cases where the books were better than the movies. In both figures, FiveThirtyEight's data is shown on the right.
+
 <p align='center'>
     <img src='/assets/metis_second_project/moviesbetterthanbooks.png'>
     <img src='/assets/metis_second_project/booksbetterthanmovies.png'>
 </p>
+
+To learn more about this project check it on [Github](https://github.com/kennmyers/Metis-Projects/tree/master/luther/movie_book_analysis) or see my [presentation](https://docs.google.com/presentation/d/1LYB7e1kdGuIurbkghLURA3gfZv6MLUNcuCLfptaj5U0/edit?usp=sharing).
