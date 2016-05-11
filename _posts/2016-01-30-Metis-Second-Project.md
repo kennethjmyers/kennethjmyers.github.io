@@ -63,4 +63,4 @@ In the figures below, the top figure shows extreme cases where movies were rated
     <img src='/assets/metis_second_project/booksbetterthanmovies.png'>
 </p>
 
-To learn more about this project check it on [Github](https://github.com/kennmyers/Metis-Projects/tree/master/luther/movie_book_analysis) or see my [presentation](https://docs.google.com/presentation/d/1LYB7e1kdGuIurbkghLURA3gfZv6MLUNcuCLfptaj5U0/edit?usp=sharing).
+To learn more about this project check it out on [Github](https://github.com/kennmyers/Metis-Projects/tree/master/luther/movie_book_analysis) or see my [presentation](https://docs.google.com/presentation/d/1LYB7e1kdGuIurbkghLURA3gfZv6MLUNcuCLfptaj5U0/edit?usp=sharing).
