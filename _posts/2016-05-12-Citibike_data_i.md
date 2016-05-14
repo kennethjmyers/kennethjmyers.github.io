@@ -55,7 +55,7 @@ Next I merged the Citi bike data with 2010 census data which had the populations
   </p>
 </iframe>
 <div style="text-align:center;margin-top:-40px;">
-    <p style="font-size:.8em">The rides/day/station/capita (RDSC) for each zip code along with the number of Citi Bike stations in that zip code</p>
+    <p style="font-size:.8em">The rides/day/station/capita (RDSC) for each zip code along with the number of Citi Bike stations in that zip code. Averages for RDSC and # of stations are also shown to give a better idea of what the upper and lower halves look like. **Note:** Data points may be hidden by the legend so try panning the chart to see everything.</p>
     <br>
 </div>
 
@@ -71,20 +71,22 @@ I figured someone might be interested in the same graph as above but with rides/
   </p>
 </iframe>
 <div style="text-align:center;margin-top:-40px;">
-    <p style="font-size:.8em">The rides/day/capita (RDC) for each zip code along with the number of Citi Bike stations in that zip code</p>
+    <p style="font-size:.8em">The rides/day/capita (RDC) for each zip code along with the number of Citi Bike stations in that zip code. Again the averages are shown for RDC and # of stations.</p>
     <br>
 </div>
 
 These results were more interesting than I expected. We see some areas like 10282 (an area near the WTC) that get a lot of use out of their available bike stations (2 total) or 10018 which gets a lot of use based on the number of people there. However, there are other zip codes like 11201 (located in Brooklyn) which has the most stations at 32 and very low RDSC. Comparing this with the earlier data, we see that 11201 isn't even in the top 10 places to depart from or arrive at. **So why does it have the most bike stations?**
 
-We do not have a baseline of what constitutes a surplus or deficit of bikes at a location (it is not possible to obtain that from this data, at least not without knowing how many bikes are at a location to start). Because of this we cannot say that there is a deficit of bikes at 10282. However, we can begin using this to examine where bike stations are underutilized, as it appears with 11201.
+I also want to point out that areas with high RDSC (high usage per station) also tend to be on the lower end of the amount of stations (ex: 10282, 10018, 10280, 10006, 10069, 10004). This is indicative of areas that could use more stations/bikes. This is less apparent for high RDC and for both lower RDSC and RDC the number of stations appears more random.
+
+We do not have a baseline of what constitutes a surplus or deficit of bikes at a location (it is not possible to obtain that from this data, at least not without knowing how many bikes are at a location to start). Because of this we cannot say for certain that there is a deficit of bikes at 10282 or a surplus at 10211, despite what RDSC may suggest. Instead, what we are seeing is where stations are being utilized significantly  and places where they are underutilized.
 
 Two immediate reactions to these areas come to mind:
 
-1. Either more promotion needs to be done in these areas to get people using the bikes, or
-2. Less bike stations are needed in these areas and they can be moved to where true bike deficits occur.
+1. Either more promotion needs to be done in the underutilized areas to get people using the bikes, or
+2. Less bike stations are needed in these areas and they can be moved more popular areas.
 
-While it would appear that either of these would be good actions to take, the second option is better because most people in the city are already aware of the bikes. it would probably be better to collect even more data first:
+While it would appear that either of these would be good actions to take, the second option is better because most people in the city are already aware of the bikes.  To support this, we should look for more data:
 
 1. As stated before, where are the true deficits and surpluses? Could we poll people for that, or perhaps use angry tweets and scrape peoples' location data to determine what zip code they are in.
 2. What other factors might be preventing people from using the bikes in these zip codes?
