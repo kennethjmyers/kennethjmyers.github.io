@@ -31,7 +31,7 @@ Below shows the movement from and to different zip codes in the morning. Right n
     </a>
   </p>
 </iframe>
-<div style="text-align:center">
+<div style="text-align:center;margin-top:-40px;">
     <p style="font-size:.8em">This graph shows the total number of departures from and arrivals at each bike station by zip code between April 2015 and March 2016. (Hint: you can use the tools to zoom in mouse over the data for values)</p>
     <br>
 </div>
@@ -54,7 +54,7 @@ Next I merged the Citi bike data with 2010 census data which had the populations
     </a>
   </p>
 </iframe>
-<div style="text-align:center">
+<div style="text-align:center;margin-top:-40px;">
     <p style="font-size:.8em">The rides/day/station/capita (RDSC) for each zip code along with the number of Citi Bike stations in that zip code</p>
     <br>
 </div>
@@ -70,7 +70,7 @@ I figured someone might be interested in the same graph as above but with rides/
     </a>
   </p>
 </iframe>
-<div style="text-align:center">
+<div style="text-align:center;margin-top:-40px;">
     <p style="font-size:.8em">The rides/day/capita (RDC) for each zip code along with the number of Citi Bike stations in that zip code</p>
     <br>
 </div>
