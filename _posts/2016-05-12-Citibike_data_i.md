@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "How are New Yorkers Utilizing Citibikes?"
+title: "How are New Yorkers Utilizing Citi Bikes?"
 author: Kenneth Myers
-description: Diving into the Citibike data.
+description: Diving into the Citi Bike data.
 headline:
 modified: 2016-05-12
 category: Data Science
-tags: [datascience, data science, data, citibike, nyc, ny, new york, bikes]
+tags: [datascience, data science, data, citibike, citi bike, nyc, ny, new york, bikes]
 imagefeature:
 mathjax:
 chart:
