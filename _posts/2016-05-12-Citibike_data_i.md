@@ -16,7 +16,7 @@ featured: true
 
 New York's Citi Bikes make up the largest bike share program in the country. It began three years ago in May 2013 and currently consists of a fleet of 6,000 bikes, which the city plans to double by next year. Citi Bike's data is [publicly available](https://www.citibikenyc.com/system-data) and I was curious what I could extract from it. At first I wanted to examine the tourists' use of the Citi Bikes but couldn't find much that was interesting or other datasets that would make my findings more useful. So I pivoted and decided to look at how residents (including the permanent residents *and* tourists) utilized the bike stations in their area.
 
-I looked at data from April 2015-March 2016 and it included over a million recorded trips. I narrowed data to only trips that started in the morning (between 5am-11:59:59am) when most people would be commuting so that I could reduce the trips of people returning from work in the evening (I considered this duplicate data and not representative of true departures from people's local bike stations). This cut the data down to just over 800k records.
+I looked at data from April 2015-March 2016 and it included over a million recorded trips. I narrowed data to only trips that started in the morning (between 5am-11:59:59am) when most people would be commuting so that I could reduce the trips of people returning from work in the evening (I considered this duplicate data and not representative of true departures from one's local bike stations). This cut the data down to just over 800k records.
 
 From here I used the Google Maps API to search for the location of each bike station in order to get the zip code of each station. I did this because it reduces the number of locations from over 500 stations to just over 40 zip codes (a much easier number to look at on a chart and also makes it easier to generalize locations that people live).
 
@@ -32,7 +32,7 @@ Below shows the movement from and to different zip codes in the morning. Right n
   </p>
 </iframe>
 <div style="text-align:center;margin-top:-40px;">
-    <p style="font-size:.8em">This graph shows the total number of departures from and arrivals at each bike station by zip code between April 2015 and March 2016. (Hint: you can use the tools to zoom in mouse over the data for values)</p>
+    <p style="font-size:.8em">This graph shows the total number of departures from and arrivals at each zip code between April 2015 and March 2016. (Hint: you can use the tools to zoom in mouse over the data for values)</p>
     <br>
 </div>
 
@@ -75,7 +75,7 @@ I figured someone might be interested in the same graph as above but with rides/
     <br>
 </div>
 
-These results were more interesting than I expected. We see some areas like 10282 (an area near the WTC) that get a lot of use out of their available bike stations (2 total) or 10018 which gets a lot of use based on the number of people there. However, there are other zip codes like 11201 (located in Brooklyn) which has the most stations at 32 and very low RDSC. Comparing this with the earlier data, we see that 11201 isn't even in the top 10 places do depart or arrive at. **So why does it have the most bike stations?**
+These results were more interesting than I expected. We see some areas like 10282 (an area near the WTC) that get a lot of use out of their available bike stations (2 total) or 10018 which gets a lot of use based on the number of people there. However, there are other zip codes like 11201 (located in Brooklyn) which has the most stations at 32 and very low RDSC. Comparing this with the earlier data, we see that 11201 isn't even in the top 10 places to depart from or arrive at. **So why does it have the most bike stations?**
 
 We do not have a baseline of what constitutes a surplus or deficit of bikes at a location (it is not possible to obtain that from this data, at least not without knowing how many bikes are at a location to start). Because of this we cannot say that there is a deficit of bikes at 10282. However, we can begin using this to examine where bike stations are underutilized, as it appears with 11201.
 
@@ -84,7 +84,7 @@ Two immediate reactions to these areas come to mind:
 1. Either more promotion needs to be done in these areas to get people using the bikes, or
 2. Less bike stations are needed in these areas and they can be moved to where true bike deficits occur.
 
-While it would appear that either of these would be good actions to take, it would probably be better to collect even more data first:
+While it would appear that either of these would be good actions to take, the second option is better because most people in the city are already aware of the bikes. it would probably be better to collect even more data first:
 
 1. As stated before, where are the true deficits and surpluses? Could we poll people for that, or perhaps use angry tweets and scrape peoples' location data to determine what zip code they are in.
 2. What other factors might be preventing people from using the bikes in these zip codes?
@@ -92,8 +92,9 @@ While it would appear that either of these would be good actions to take, it wou
     2. Do people not have enough disposable income to purchase memberships?
     3. Are people less healthy in these areas?
     4. Are people less likely to know how to ride a bike?
-    5. etc.
-3. Does each bike station hold the same number of bikes? If so, what is that number, and if not what are the numbers on each station? This is crucial because do we know if the 32 stations in 11201 only hold 1 bike each (it is doubtful but these variables should be accounted for).
+    5. Do the people living in these areas commute far enough that using a bike is impractical.
+    6. etc.
+3. Does each bike station hold the same number of bikes? If so, what is that number, and if not what are the numbers at each station? This is crucial because do we know if the 32 stations in 11201 only hold 1 bike each (it is doubtful but these variables should be accounted for).
 
 For now we have found a place to start analyzing the underutilization of Citi Bikes. We know areas where residents use them the most and areas where they use them the least. Even without the above questions answered, NYC Bike Share could still use information like this to redistribute bike stations and see how it balances out the residents' use.
 
