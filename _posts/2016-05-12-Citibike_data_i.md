@@ -59,7 +59,7 @@ Next I merged the Citi bike data with 2010 census data which had the populations
     <br>
 </div>
 
-I figured someone might be interested in the same graph as above but with rides/day/capita (RDC) rather than RDSC (in case you wanted to look at many rides and area uses per day, regardless of the number of stations there).
+I figured someone might be interested in the same graph as above but with rides/day/capita (RDC) rather than RDSC (in case you wanted to look at many rides an area uses per day, regardless of the number of stations there).
 
 <iframe frameBorder="0"
  src="/assets/citibike_i/fig3.html"
