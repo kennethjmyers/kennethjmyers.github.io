@@ -14,13 +14,17 @@ comments: true
 featured: true
 ---
 
-New York's Citi Bikes make up the largest bike share program in the country. It began three years ago in May 2013 and currently consists of a fleet of 6,000 bikes, which the city plans to double by next year. Citi Bike's data is [publicly available](https://www.citibikenyc.com/system-data) and I was curious what I could extract from it. At first I wanted to examine the tourists' use of the Citi Bikes but couldn't find much that was interesting or other datasets that would make my findings more useful. So I pivoted and decided to look at how residents (including the permanent residents *and* tourists) utilized the bike stations in their area.
+New York's Citi Bikes make up the largest bike share program in the country. It began three years ago in May 2013 and currently consists of a fleet of 6,000 bikes, which the city plans to double by next year. Citi Bike's data is [publicly available](https://www.citibikenyc.com/system-data) and I was curious what I could extract from it. I wanted to see how balanced the use of the stations were and decided to look at how residents (including the permanent residents *and* tourists) utilized the bike stations in their local area.
+
+Ideally we would want to see that the relative use of bikes is balanced across all areas. But, in the event that they are unbalanced, how could we redistribute the bike stations.
+
+### The Data
 
 I looked at data from April 2015-March 2016 and it included over a million recorded trips. I narrowed data to only trips that started in the morning (between 5am-11:59:59am) when most people would be commuting so that I could reduce the trips of people returning from work in the evening (I considered this duplicate data and not representative of true departures from one's local bike stations). This cut the data down to just over 800k records.
 
 From here I used the Google Maps API to search for the location of each bike station in order to get the zip code of each station. I did this because it reduces the number of locations from over 500 stations to just over 40 zip codes (a much easier number to look at on a chart and also makes it easier to generalize locations that people live).
 
-Below shows the movement from and to different zip codes in the morning. Right now it may not be apparent why this is useful, but it will be meaningful later on.  
+Below shows the movement from and to zip codes in the morning. Right now it may not be apparent why this is useful, it is not normalized across zip codes and doesn't tell us how balanced an area is, but it will be meaningful later on.  
 
 <iframe frameBorder="0"
  src="/assets/citibike_i/fig1.html"
@@ -59,7 +63,7 @@ Next I merged the Citi bike data with 2010 census data which had the populations
     <br>
 </div>
 
-I figured someone might be interested in the same graph as above but with rides/day/capita (RDC) rather than RDSC (in case you wanted to look at many rides an area uses per day, regardless of the number of stations there).
+I figured someone might be interested in the same graph as above but with rides/day/capita (**RDC**) rather than RDSC (in case you wanted to look at many rides an area uses per day, regardless of the number of stations there).
 
 <iframe frameBorder="0"
  src="/assets/citibike_i/fig3.html"
@@ -75,13 +79,15 @@ I figured someone might be interested in the same graph as above but with rides/
     <br>
 </div>
 
+### What does any of this mean?
+
 These results were more interesting than I expected. We see some areas like 10282 (an area near the WTC) that get a lot of use out of their available bike stations (2 total) or 10018 which gets a lot of use based on the number of people there. However, there are other zip codes like 11201 (located in Brooklyn) which has the most stations at 32 and very low RDSC. Comparing this with the earlier data, we see that 11201 isn't even in the top 10 places to depart from or arrive at. **So why does it have the most bike stations?**
 
 I also want to point out that areas with high RDSC (high usage per station) also tend to be on the lower end of the amount of stations (ex: 10282, 10018, 10280, 10006, 10069, 10004). This is indicative of areas that could use more stations/bikes. This is less apparent for high RDC and for both lower RDSC and RDC the number of stations appears more random.
 
 We do not have a baseline of what constitutes a surplus or deficit of bikes at a location (it is not possible to obtain that from this data, at least not without knowing how many bikes are at a location to start). Because of this we cannot say for certain that there is a deficit of bikes at 10282 or a surplus at 10211, despite what RDSC may suggest. Instead, what we are seeing is where stations are being utilized significantly  and places where they are underutilized.
 
-Two immediate reactions to these areas come to mind:
+Two immediate reactions to these findings come to mind:
 
 1. Either more promotion needs to be done in the underutilized areas to get people using the bikes, or
 2. Less bike stations are needed in these areas and they can be moved more popular areas.
