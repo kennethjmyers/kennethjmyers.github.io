@@ -16,7 +16,7 @@ featured: true
 
 Our first project at Metis was less of a data science assignment and more of a data analysis project (partly because we hadn't learned much data science yet and partly to get us acquainted with some libraries like mplib, numpy and pandas). The goal was as follows:
 
->Recommend to a tech company the best subway stations where their street team should promote. The street team's goal is to collect names and emails of people who would donate and/or come to a gala.
+>Recommend to a tech company focused on getting women involved in tech is having a gala that they need to promote for. They come to you and ask you to find the best subway stations where their street team (those who advertise the event on the streets) should promote. The street team's goal is to collect names and emails of people who would donate and/or come to a gala.
 
 My group and I broke this prompt down into three parts:
 

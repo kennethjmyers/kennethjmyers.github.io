@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How are New Yorkers Utilizing Citi Bikes?"
+title: "How Could Citi Bike Stations Be Redistributed?"
 author: Kenneth Myers
 description: Diving into the Citi Bike data.
 headline:
