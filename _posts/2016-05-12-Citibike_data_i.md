@@ -11,7 +11,7 @@ imagefeature:
 mathjax:
 chart:
 comments: true
-featured: true
+featured: false
 ---
 
 New York's Citi Bikes make up the largest bike share program in the country. It began three years ago in May 2013 and currently consists of a fleet of 6,000 bikes, which the city plans to double by next year. Citi Bike's data is [publicly available](https://www.citibikenyc.com/system-data) and I was curious what I could extract from it. [Citi Bike already makes it easy for people to find bikes](https://member.citibikenyc.com/map/) but I wanted to see how balanced the use of the stations actually were and decided to look at how residents (including the permanent residents *and* tourists) utilized the bike stations in their local area.
