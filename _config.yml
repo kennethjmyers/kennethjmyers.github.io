@@ -7,8 +7,8 @@ exclude:
   - "/vendor/"
 
 # Site settings
-title: Easy Like Sunday Morning
-subtitle: "Data and a whole lot of love."
+title: Data Blog
+subtitle: ""
 email: kennjamesmyers@gmail.com
 name: Kenneth Myers
 description: >
